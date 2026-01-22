@@ -25,6 +25,15 @@ namespace binaryConvert
            lblDisplay.Text = lblDisplay.Text + returnButtonText(sender);  // Get the text value from buttons
         }
 
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            // Safely remove the last character if there is one
+            string currentText = lblDisplay.Text;
+            if (!string.IsNullOrEmpty(currentText))
+                lblDisplay.Text = currentText.Remove(currentText.Length - 1);
+        }
+
+
         //***********************************************************************************************************************************
         //         METHODS
         //***********************************************************************************************************************************
@@ -33,5 +42,7 @@ namespace binaryConvert
             Button clickedButton = (Button)sender; //Cast the sender to a Button so we can access its properties
             return clickedButton.Text;
         }// end of returnButtonText method
+
+
     }
 }
