@@ -17,9 +17,21 @@ namespace binaryConvert
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        //***********************************************************************************************************************************
+        //         CLICK EVENTS
+        //***********************************************************************************************************************************
+        private void numberBtn_Click(object sender, EventArgs e)
         {
-
+           lblDisplay.Text = lblDisplay.Text + returnButtonText(sender);  // Get the text value from buttons
         }
+
+        //***********************************************************************************************************************************
+        //         METHODS
+        //***********************************************************************************************************************************
+        private string returnButtonText(object sender) // Method for returns text of button clicked 
+        {
+            Button clickedButton = (Button)sender; //Cast the sender to a Button so we can access its properties
+            return clickedButton.Text;
+        }// end of returnButtonText method
     }
 }

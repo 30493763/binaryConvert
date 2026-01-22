@@ -2,6 +2,7 @@
 {
     partial class Form1
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -32,9 +33,9 @@
             this.btnZero = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
-            this.txtInput = new System.Windows.Forms.TextBox();
             this.lblResultPrompt = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
+            this.lblDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOne
@@ -46,6 +47,7 @@
             this.btnOne.TabIndex = 0;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = true;
+            this.btnOne.Click += new System.EventHandler(this.numberBtn_Click);
             // 
             // btnZero
             // 
@@ -56,6 +58,7 @@
             this.btnZero.TabIndex = 1;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
+            this.btnZero.Click += new System.EventHandler(this.numberBtn_Click);
             // 
             // btnDel
             // 
@@ -77,16 +80,6 @@
             this.btnCheck.Text = "chk";
             this.btnCheck.UseVisualStyleBackColor = true;
             // 
-            // txtInput
-            // 
-            this.txtInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput.Location = new System.Drawing.Point(12, 12);
-            this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(666, 29);
-            this.txtInput.TabIndex = 4;
-            this.txtInput.Text = "0000000000000000000000000000000000000000000000000000000000000000";
-            this.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lblResultPrompt
             // 
             this.lblResultPrompt.AutoSize = true;
@@ -96,7 +89,6 @@
             this.lblResultPrompt.Size = new System.Drawing.Size(204, 51);
             this.lblResultPrompt.TabIndex = 5;
             this.lblResultPrompt.Text = "RESULT:";
-            this.lblResultPrompt.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblResult
             // 
@@ -108,14 +100,23 @@
             this.lblResult.TabIndex = 6;
             this.lblResult.Text = "0";
             // 
+            // lblDisplay
+            // 
+            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplay.Location = new System.Drawing.Point(17, 22);
+            this.lblDisplay.Name = "lblDisplay";
+            this.lblDisplay.Size = new System.Drawing.Size(661, 24);
+            this.lblDisplay.TabIndex = 7;
+            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 311);
+            this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblResultPrompt);
-            this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnZero);
@@ -133,9 +134,9 @@
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnCheck;
-        private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Label lblResultPrompt;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label lblDisplay;
     }
 }
 
