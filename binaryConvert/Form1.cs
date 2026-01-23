@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 // aurthor: ching ho, Li
 // student id: 30493763
-// last update date: 22-jan-2026
+// last update date: 23-jan-2026
 // last update time: 11:58 AM
-// description: This program that converts a 4 - bit or 8-bit binary number into its decimal equivalent.
+// description: This program that converts a 0 to 64 bits binary number into its decimal equivalent.
 // github repo:https://github.com/30493763/binaryConvert.git
 
 namespace binaryConvert
@@ -73,6 +73,14 @@ namespace binaryConvert
             Application.Exit();
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = "";
+            RESULT_DISPLAYED = false;
+            lblResult.Text = "0";
+            lblBitLengthResult.Text = "0";
+        }
+
         private void btnCheck_Click(object sender, EventArgs e)
         {
             //get the binary number from the label
@@ -100,12 +108,6 @@ namespace binaryConvert
             return clickedButton.Text;
         }// end of returnButtonText method
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            lblDisplay.Text = "";
-            RESULT_DISPLAYED = false;
-            lblResult.Text = "0";
-            lblBitLengthResult.Text = "0";
-        }
+
     }
 }
