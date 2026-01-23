@@ -103,7 +103,7 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(229, 91);
+            this.lblResult.Location = new System.Drawing.Point(227, 91);
             this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(42, 46);
@@ -127,15 +127,15 @@
             this.lblBitLength.Location = new System.Drawing.Point(20, 180);
             this.lblBitLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLength.Name = "lblBitLength";
-            this.lblBitLength.Size = new System.Drawing.Size(193, 46);
+            this.lblBitLength.Size = new System.Drawing.Size(455, 46);
             this.lblBitLength.TabIndex = 8;
-            this.lblBitLength.Text = "LENGTH:";
+            this.lblBitLength.Text = "BIT LENGTH (MAX. 64):";
             // 
             // lblBitLengthResult
             // 
             this.lblBitLengthResult.AutoSize = true;
             this.lblBitLengthResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBitLengthResult.Location = new System.Drawing.Point(229, 180);
+            this.lblBitLengthResult.Location = new System.Drawing.Point(496, 180);
             this.lblBitLengthResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLengthResult.Name = "lblBitLengthResult";
             this.lblBitLengthResult.Size = new System.Drawing.Size(42, 46);
