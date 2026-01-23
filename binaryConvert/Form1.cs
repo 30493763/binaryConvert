@@ -43,6 +43,23 @@ namespace binaryConvert
             return clickedButton.Text;
         }// end of returnButtonText method
 
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            //get the binary number from the label
+            string binaryNumber = lblDisplay.Text;
 
+            //validate the binary number
+            if (string.IsNullOrEmpty(binaryNumber) || binaryNumber.Any(c => c != '0' && c != '1'))
+            {
+                MessageBox.Show("Please enter a valid binary number.");
+                return;
+            }
+
+            //convert to decimal
+            int decimalNumber = Convert.ToInt32(binaryNumber, 2);
+
+            //display the decimal number
+            lblDisplay.Text = decimalNumber.ToString();
+        }
     }
 }

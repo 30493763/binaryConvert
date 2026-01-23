@@ -41,9 +41,10 @@
             // btnOne
             // 
             this.btnOne.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOne.Location = new System.Drawing.Point(12, 127);
+            this.btnOne.Location = new System.Drawing.Point(16, 156);
+            this.btnOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOne.Name = "btnOne";
-            this.btnOne.Size = new System.Drawing.Size(162, 167);
+            this.btnOne.Size = new System.Drawing.Size(216, 206);
             this.btnOne.TabIndex = 0;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // btnZero
             // 
             this.btnZero.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.Location = new System.Drawing.Point(180, 127);
+            this.btnZero.Location = new System.Drawing.Point(240, 156);
+            this.btnZero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(162, 167);
+            this.btnZero.Size = new System.Drawing.Size(216, 206);
             this.btnZero.TabIndex = 1;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
@@ -63,9 +65,10 @@
             // btnDel
             // 
             this.btnDel.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.Location = new System.Drawing.Point(348, 127);
+            this.btnDel.Location = new System.Drawing.Point(464, 156);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(162, 167);
+            this.btnDel.Size = new System.Drawing.Size(216, 206);
             this.btnDel.TabIndex = 2;
             this.btnDel.Text = "del";
             this.btnDel.UseVisualStyleBackColor = true;
@@ -74,20 +77,23 @@
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(516, 127);
+            this.btnCheck.Location = new System.Drawing.Point(688, 156);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(162, 167);
+            this.btnCheck.Size = new System.Drawing.Size(216, 206);
             this.btnCheck.TabIndex = 3;
             this.btnCheck.Text = "chk";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // lblResultPrompt
             // 
             this.lblResultPrompt.AutoSize = true;
             this.lblResultPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultPrompt.Location = new System.Drawing.Point(12, 60);
+            this.lblResultPrompt.Location = new System.Drawing.Point(16, 74);
+            this.lblResultPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultPrompt.Name = "lblResultPrompt";
-            this.lblResultPrompt.Size = new System.Drawing.Size(204, 51);
+            this.lblResultPrompt.Size = new System.Drawing.Size(255, 63);
             this.lblResultPrompt.TabIndex = 5;
             this.lblResultPrompt.Text = "RESULT:";
             // 
@@ -95,26 +101,28 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(221, 60);
+            this.lblResult.Location = new System.Drawing.Point(295, 74);
+            this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(46, 51);
+            this.lblResult.Size = new System.Drawing.Size(57, 63);
             this.lblResult.TabIndex = 6;
             this.lblResult.Text = "0";
             // 
             // lblDisplay
             // 
             this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplay.Location = new System.Drawing.Point(17, 22);
+            this.lblDisplay.Location = new System.Drawing.Point(23, 27);
+            this.lblDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(661, 24);
+            this.lblDisplay.Size = new System.Drawing.Size(881, 30);
             this.lblDisplay.TabIndex = 7;
             this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 311);
+            this.ClientSize = new System.Drawing.Size(931, 383);
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblResultPrompt);
@@ -122,6 +130,7 @@
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnOne);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
