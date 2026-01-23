@@ -38,13 +38,15 @@
             this.lblDisplay = new System.Windows.Forms.Label();
             this.lblBitLength = new System.Windows.Forms.Label();
             this.lblBitLengthResult = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
             // 
             this.btnOne.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOne.Location = new System.Drawing.Point(29, 247);
-            this.btnOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOne.Margin = new System.Windows.Forms.Padding(4);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(216, 206);
             this.btnOne.TabIndex = 0;
@@ -56,7 +58,7 @@
             // 
             this.btnZero.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZero.Location = new System.Drawing.Point(253, 247);
-            this.btnZero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnZero.Margin = new System.Windows.Forms.Padding(4);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(216, 206);
             this.btnZero.TabIndex = 1;
@@ -66,26 +68,30 @@
             // 
             // btnDel
             // 
-            this.btnDel.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnDel.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.btnDel.Location = new System.Drawing.Point(477, 247);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(216, 206);
+            this.btnDel.Size = new System.Drawing.Size(216, 100);
             this.btnDel.TabIndex = 2;
-            this.btnDel.Text = "del";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Text = "delete";
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnCheck
             // 
-            this.btnCheck.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnCheck.Font = new System.Drawing.Font("Haettenschweiler", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCheck.Location = new System.Drawing.Point(701, 247);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(216, 206);
             this.btnCheck.TabIndex = 3;
-            this.btnCheck.Text = "chk";
-            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Text = "CHECK";
+            this.btnCheck.UseVisualStyleBackColor = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // lblResultPrompt
@@ -142,11 +148,38 @@
             this.lblBitLengthResult.TabIndex = 9;
             this.lblBitLengthResult.Text = "0";
             // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Haettenschweiler", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(815, 200);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(102, 40);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnReset.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnReset.Location = new System.Drawing.Point(477, 357);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(216, 100);
+            this.btnReset.TabIndex = 11;
+            this.btnReset.Text = "reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 475);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblBitLengthResult);
             this.Controls.Add(this.lblBitLength);
             this.Controls.Add(this.lblDisplay);
@@ -156,7 +189,7 @@
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnOne);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -175,6 +208,8 @@
         private System.Windows.Forms.Label lblDisplay;
         private System.Windows.Forms.Label lblBitLength;
         private System.Windows.Forms.Label lblBitLengthResult;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

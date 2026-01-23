@@ -68,6 +68,11 @@ namespace binaryConvert
                 lblDisplay.Text = currentText.Remove(currentText.Length - 1);
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void btnCheck_Click(object sender, EventArgs e)
         {
             //get the binary number from the label
@@ -95,6 +100,12 @@ namespace binaryConvert
             return clickedButton.Text;
         }// end of returnButtonText method
 
-       
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = "";
+            RESULT_DISPLAYED = false;
+            lblResult.Text = "0";
+            lblBitLengthResult.Text = "0";
+        }
     }
 }
