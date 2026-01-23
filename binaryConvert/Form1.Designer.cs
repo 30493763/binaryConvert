@@ -36,6 +36,8 @@
             this.lblResultPrompt = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblDisplay = new System.Windows.Forms.Label();
+            this.lblBitLength = new System.Windows.Forms.Label();
+            this.lblBitLengthResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOne
@@ -89,22 +91,22 @@
             // lblResultPrompt
             // 
             this.lblResultPrompt.AutoSize = true;
-            this.lblResultPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultPrompt.Location = new System.Drawing.Point(16, 74);
+            this.lblResultPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultPrompt.Location = new System.Drawing.Point(13, 91);
             this.lblResultPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultPrompt.Name = "lblResultPrompt";
-            this.lblResultPrompt.Size = new System.Drawing.Size(255, 63);
+            this.lblResultPrompt.Size = new System.Drawing.Size(189, 46);
             this.lblResultPrompt.TabIndex = 5;
             this.lblResultPrompt.Text = "RESULT:";
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(295, 74);
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(199, 91);
             this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(57, 63);
+            this.lblResult.Size = new System.Drawing.Size(42, 46);
             this.lblResult.TabIndex = 6;
             this.lblResult.Text = "0";
             // 
@@ -118,11 +120,35 @@
             this.lblDisplay.TabIndex = 7;
             this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // lblBitLength
+            // 
+            this.lblBitLength.AutoSize = true;
+            this.lblBitLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBitLength.Location = new System.Drawing.Point(680, 91);
+            this.lblBitLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBitLength.Name = "lblBitLength";
+            this.lblBitLength.Size = new System.Drawing.Size(193, 46);
+            this.lblBitLength.TabIndex = 8;
+            this.lblBitLength.Text = "LENGTH:";
+            // 
+            // lblBitLengthResult
+            // 
+            this.lblBitLengthResult.AutoSize = true;
+            this.lblBitLengthResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBitLengthResult.Location = new System.Drawing.Point(862, 91);
+            this.lblBitLengthResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBitLengthResult.Name = "lblBitLengthResult";
+            this.lblBitLengthResult.Size = new System.Drawing.Size(42, 46);
+            this.lblBitLengthResult.TabIndex = 9;
+            this.lblBitLengthResult.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 383);
+            this.Controls.Add(this.lblBitLengthResult);
+            this.Controls.Add(this.lblBitLength);
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblResultPrompt);
@@ -147,6 +173,8 @@
         private System.Windows.Forms.Label lblResultPrompt;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.Label lblBitLength;
+        private System.Windows.Forms.Label lblBitLengthResult;
     }
 }
 

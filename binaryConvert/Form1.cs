@@ -23,6 +23,7 @@ namespace binaryConvert
     public partial class Form1 : Form
     {
         const int MAX_BINARY_LENGTH = 64; // Maximum length for binary number
+        bool RESULT_DISPLAYED = false; // Flag to indicate if result is displayed
 
         public Form1()
         {
@@ -36,23 +37,27 @@ namespace binaryConvert
         {
             //get the binary number from the label
             string binaryNumber = lblDisplay.Text;
-            int binaryNumberLength = binaryNumber.Length;
-            lblResult.Text = binaryNumberLength.ToString();
+
 
             //validate if the display is a  binary number, if not valid reset the display
-            if (lblDisplay.Text.Any(c => c != '0' && c != '1'))
+            if (RESULT_DISPLAYED)
             {
                 lblDisplay.Text = returnButtonText(sender);
+                lblBitLengthResult.Text = "1";
+                RESULT_DISPLAYED = false;
+                lblResult.Text = "0";
                 return;
             }
 
-            if (binaryNumberLength > MAX_BINARY_LENGTH-1)
+            if (binaryNumber.Length > MAX_BINARY_LENGTH-1)
             {
                 MessageBox.Show("Please enter a binary number with a maximum of 64cbits.");
                 return;
             }
 
             lblDisplay.Text = lblDisplay.Text + returnButtonText(sender);  // Get the text value from buttons
+
+            lblBitLengthResult.Text = lblDisplay.Text.Length.ToString(); // Update the bit length display
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -77,7 +82,8 @@ namespace binaryConvert
             }
 
             //convert to decimal then display the decimal number
-            lblDisplay.Text = Convert.ToInt64(binaryNumber, 2).ToString();
+            lblResult.Text = Convert.ToInt64(binaryNumber, 2).ToString();
+            RESULT_DISPLAYED = true;
         }
 
         //***********************************************************************************************************************************
