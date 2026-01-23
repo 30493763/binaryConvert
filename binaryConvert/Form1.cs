@@ -8,10 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+// aurthor: ching ho, Li
+// student id: 30493763
+// last update date: 22-jan-2026
+// last update time: 11:58 AM
+// description: This program that converts a 4 - bit or 8-bit binary number into its decimal equivalent.
+// github repo:https://github.com/30493763/binaryConvert.git
+
 namespace binaryConvert
 {
+
+
     public partial class Form1 : Form
     {
+        const int MAX_BINARY_LENGTH = 64; // Maximum length for binary number
+
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +34,25 @@ namespace binaryConvert
         //***********************************************************************************************************************************
         private void numberBtn_Click(object sender, EventArgs e)
         {
-           lblDisplay.Text = lblDisplay.Text + returnButtonText(sender);  // Get the text value from buttons
+            //get the binary number from the label
+            string binaryNumber = lblDisplay.Text;
+            int binaryNumberLength = binaryNumber.Length;
+            lblResult.Text = binaryNumberLength.ToString();
+
+            //validate if the display is a  binary number, if not valid reset the display
+            if (lblDisplay.Text.Any(c => c != '0' && c != '1'))
+            {
+                lblDisplay.Text = returnButtonText(sender);
+                return;
+            }
+
+            if (binaryNumberLength > MAX_BINARY_LENGTH-1)
+            {
+                MessageBox.Show("Please enter a binary number with a maximum of 64cbits.");
+                return;
+            }
+
+            lblDisplay.Text = lblDisplay.Text + returnButtonText(sender);  // Get the text value from buttons
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -33,6 +63,22 @@ namespace binaryConvert
                 lblDisplay.Text = currentText.Remove(currentText.Length - 1);
         }
 
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            //get the binary number from the label
+            string binaryNumber = lblDisplay.Text;
+
+
+            //validate the binary number
+            if (string.IsNullOrEmpty(binaryNumber) || binaryNumber.Any(c => c != '0' && c != '1'))
+            {
+                MessageBox.Show("Please enter a valid binary number.");
+                return;
+            }
+
+            //convert to decimal then display the decimal number
+            lblDisplay.Text = Convert.ToInt64(binaryNumber, 2).ToString();
+        }
 
         //***********************************************************************************************************************************
         //         METHODS
@@ -43,23 +89,6 @@ namespace binaryConvert
             return clickedButton.Text;
         }// end of returnButtonText method
 
-        private void btnCheck_Click(object sender, EventArgs e)
-        {
-            //get the binary number from the label
-            string binaryNumber = lblDisplay.Text;
-
-            //validate the binary number
-            if (string.IsNullOrEmpty(binaryNumber) || binaryNumber.Any(c => c != '0' && c != '1'))
-            {
-                MessageBox.Show("Please enter a valid binary number.");
-                return;
-            }
-
-            //convert to decimal
-            int decimalNumber = Convert.ToInt32(binaryNumber, 2);
-
-            //display the decimal number
-            lblDisplay.Text = decimalNumber.ToString();
-        }
+       
     }
 }
