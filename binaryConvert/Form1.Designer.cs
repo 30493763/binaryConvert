@@ -43,7 +43,7 @@
             // btnOne
             // 
             this.btnOne.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOne.Location = new System.Drawing.Point(16, 156);
+            this.btnOne.Location = new System.Drawing.Point(13, 247);
             this.btnOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(216, 206);
@@ -55,7 +55,7 @@
             // btnZero
             // 
             this.btnZero.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.Location = new System.Drawing.Point(240, 156);
+            this.btnZero.Location = new System.Drawing.Point(237, 247);
             this.btnZero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(216, 206);
@@ -67,7 +67,7 @@
             // btnDel
             // 
             this.btnDel.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.Location = new System.Drawing.Point(464, 156);
+            this.btnDel.Location = new System.Drawing.Point(461, 247);
             this.btnDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(216, 206);
@@ -79,7 +79,7 @@
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(688, 156);
+            this.btnCheck.Location = new System.Drawing.Point(685, 247);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(216, 206);
@@ -103,7 +103,7 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(199, 91);
+            this.lblResult.Location = new System.Drawing.Point(229, 91);
             this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(42, 46);
@@ -124,7 +124,7 @@
             // 
             this.lblBitLength.AutoSize = true;
             this.lblBitLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBitLength.Location = new System.Drawing.Point(680, 91);
+            this.lblBitLength.Location = new System.Drawing.Point(20, 180);
             this.lblBitLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLength.Name = "lblBitLength";
             this.lblBitLength.Size = new System.Drawing.Size(193, 46);
@@ -135,7 +135,7 @@
             // 
             this.lblBitLengthResult.AutoSize = true;
             this.lblBitLengthResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBitLengthResult.Location = new System.Drawing.Point(862, 91);
+            this.lblBitLengthResult.Location = new System.Drawing.Point(229, 180);
             this.lblBitLengthResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLengthResult.Name = "lblBitLengthResult";
             this.lblBitLengthResult.Size = new System.Drawing.Size(42, 46);
@@ -146,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 383);
+            this.ClientSize = new System.Drawing.Size(947, 475);
             this.Controls.Add(this.lblBitLengthResult);
             this.Controls.Add(this.lblBitLength);
             this.Controls.Add(this.lblDisplay);

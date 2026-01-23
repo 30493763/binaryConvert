@@ -82,7 +82,7 @@ namespace binaryConvert
             }
 
             //convert to decimal then display the decimal number
-            lblResult.Text = Convert.ToInt64(binaryNumber, 2).ToString();
+            lblResult.Text = Convert.ToInt64(binaryNumber, 2).ToString("#,##0"); // e.g. "123,456,789"
             RESULT_DISPLAYED = true;
         }
 
