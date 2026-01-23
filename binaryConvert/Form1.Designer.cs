@@ -43,7 +43,7 @@
             // btnOne
             // 
             this.btnOne.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOne.Location = new System.Drawing.Point(13, 247);
+            this.btnOne.Location = new System.Drawing.Point(29, 247);
             this.btnOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(216, 206);
@@ -55,7 +55,7 @@
             // btnZero
             // 
             this.btnZero.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.Location = new System.Drawing.Point(237, 247);
+            this.btnZero.Location = new System.Drawing.Point(253, 247);
             this.btnZero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(216, 206);
@@ -67,7 +67,7 @@
             // btnDel
             // 
             this.btnDel.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.Location = new System.Drawing.Point(461, 247);
+            this.btnDel.Location = new System.Drawing.Point(477, 247);
             this.btnDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(216, 206);
@@ -79,7 +79,7 @@
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(685, 247);
+            this.btnCheck.Location = new System.Drawing.Point(701, 247);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(216, 206);
