@@ -83,9 +83,9 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnCheck.BackColor = System.Drawing.Color.IndianRed;
             this.btnCheck.Font = new System.Drawing.Font("Digital-7 Italic", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnCheck.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCheck.Location = new System.Drawing.Point(701, 247);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
