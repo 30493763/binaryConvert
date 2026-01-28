@@ -24,7 +24,7 @@ namespace binaryConvert
     {
         const int MAX_BINARY_LENGTH = 64; // Maximum length for binary number
         bool RESULT_DISPLAYED = false; // Flag to indicate if result is displayed
-
+        const string DEFAULT_DISPLAY = "--"; // Default display value
         public Form1()
         {
             InitializeComponent();
@@ -40,7 +40,9 @@ namespace binaryConvert
 
 
             //validate if the display is a  binary number, if not valid reset the display
-            if (RESULT_DISPLAYED)
+            //if (RESULT_DISPLAYED)
+            if (RESULT_DISPLAYED || (!RESULT_DISPLAYED && lblDisplay.Text == DEFAULT_DISPLAY) )
+
             {
                 lblDisplay.Text = returnButtonText(sender);
                 lblBitLengthResult.Text = "1";
@@ -66,6 +68,9 @@ namespace binaryConvert
             string currentText = lblDisplay.Text;
             if (!string.IsNullOrEmpty(currentText))
                 lblDisplay.Text = currentText.Remove(currentText.Length - 1);
+            else 
+                lblDisplay.Text = DEFAULT_DISPLAY; 
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -75,7 +80,7 @@ namespace binaryConvert
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            lblDisplay.Text = "";
+            lblDisplay.Text = DEFAULT_DISPLAY;
             RESULT_DISPLAYED = false;
             lblResult.Text = "0";
             lblBitLengthResult.Text = "0";

@@ -118,12 +118,13 @@
             // 
             // lblDisplay
             // 
-            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplay.Font = new System.Drawing.Font("Digital-7 Italic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDisplay.Location = new System.Drawing.Point(23, 27);
             this.lblDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(881, 30);
             this.lblDisplay.TabIndex = 7;
+            this.lblDisplay.Text = "--";
             this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblBitLength
@@ -191,7 +192,7 @@
             this.Controls.Add(this.btnOne);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Binary to Decimal Converter ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
