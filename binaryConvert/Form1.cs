@@ -12,7 +12,7 @@ using System.Windows.Forms;
 // aurthor: ching ho, Li
 // student id: 30493763
 // last update date: 28-jan-2026
-// last update time: 12:21 PM
+// last update time: 12:48 PM
 // description: This program that converts a 0 to 64 bits binary number into its decimal equivalent.
 // github repo:https://github.com/30493763/binaryConvert.git
 
