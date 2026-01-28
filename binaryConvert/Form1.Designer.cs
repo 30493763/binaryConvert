@@ -44,7 +44,7 @@
             // 
             // btnOne
             // 
-            this.btnOne.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOne.Font = new System.Drawing.Font("Digital-7 Italic", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOne.Location = new System.Drawing.Point(29, 247);
             this.btnOne.Margin = new System.Windows.Forms.Padding(4);
             this.btnOne.Name = "btnOne";
@@ -56,7 +56,7 @@
             // 
             // btnZero
             // 
-            this.btnZero.Font = new System.Drawing.Font("Haettenschweiler", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZero.Font = new System.Drawing.Font("Digital-7 Italic", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZero.Location = new System.Drawing.Point(253, 247);
             this.btnZero.Margin = new System.Windows.Forms.Padding(4);
             this.btnZero.Name = "btnZero";
@@ -69,8 +69,8 @@
             // btnDel
             // 
             this.btnDel.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnDel.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnDel.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDel.Location = new System.Drawing.Point(477, 247);
             this.btnDel.Margin = new System.Windows.Forms.Padding(4);
             this.btnDel.Name = "btnDel";
@@ -83,8 +83,8 @@
             // btnCheck
             // 
             this.btnCheck.BackColor = System.Drawing.SystemColors.ControlText;
-            this.btnCheck.Font = new System.Drawing.Font("Haettenschweiler", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCheck.Font = new System.Drawing.Font("Digital-7 Italic", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.ForeColor = System.Drawing.Color.IndianRed;
             this.btnCheck.Location = new System.Drawing.Point(701, 247);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
@@ -97,32 +97,35 @@
             // lblResultPrompt
             // 
             this.lblResultPrompt.AutoSize = true;
-            this.lblResultPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultPrompt.Location = new System.Drawing.Point(13, 91);
+            this.lblResultPrompt.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultPrompt.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblResultPrompt.Location = new System.Drawing.Point(34, 115);
             this.lblResultPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultPrompt.Name = "lblResultPrompt";
-            this.lblResultPrompt.Size = new System.Drawing.Size(189, 46);
+            this.lblResultPrompt.Size = new System.Drawing.Size(137, 42);
             this.lblResultPrompt.TabIndex = 5;
             this.lblResultPrompt.Text = "RESULT:";
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(227, 91);
+            this.lblResult.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblResult.Location = new System.Drawing.Point(248, 115);
             this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(42, 46);
+            this.lblResult.Size = new System.Drawing.Size(37, 42);
             this.lblResult.TabIndex = 6;
             this.lblResult.Text = "0";
             // 
             // lblDisplay
             // 
+            this.lblDisplay.BackColor = System.Drawing.SystemColors.Control;
             this.lblDisplay.Font = new System.Drawing.Font("Digital-7 Italic", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplay.Location = new System.Drawing.Point(23, 27);
+            this.lblDisplay.Location = new System.Drawing.Point(36, 26);
             this.lblDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(881, 30);
+            this.lblDisplay.Size = new System.Drawing.Size(881, 49);
             this.lblDisplay.TabIndex = 7;
             this.lblDisplay.Text = "--";
             this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -130,31 +133,32 @@
             // lblBitLength
             // 
             this.lblBitLength.AutoSize = true;
-            this.lblBitLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBitLength.Location = new System.Drawing.Point(20, 180);
+            this.lblBitLength.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBitLength.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblBitLength.Location = new System.Drawing.Point(29, 167);
             this.lblBitLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLength.Name = "lblBitLength";
-            this.lblBitLength.Size = new System.Drawing.Size(455, 46);
+            this.lblBitLength.Size = new System.Drawing.Size(343, 42);
             this.lblBitLength.TabIndex = 8;
             this.lblBitLength.Text = "BIT LENGTH (MAX. 64):";
             // 
             // lblBitLengthResult
             // 
             this.lblBitLengthResult.AutoSize = true;
-            this.lblBitLengthResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBitLengthResult.Location = new System.Drawing.Point(496, 180);
+            this.lblBitLengthResult.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBitLengthResult.Location = new System.Drawing.Point(496, 166);
             this.lblBitLengthResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLengthResult.Name = "lblBitLengthResult";
-            this.lblBitLengthResult.Size = new System.Drawing.Size(42, 46);
+            this.lblBitLengthResult.Size = new System.Drawing.Size(37, 42);
             this.lblBitLengthResult.TabIndex = 9;
             this.lblBitLengthResult.Text = "0";
             // 
             // btnExit
             // 
-            this.btnExit.Font = new System.Drawing.Font("Haettenschweiler", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(815, 200);
+            this.btnExit.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(701, 151);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(102, 40);
+            this.btnExit.Size = new System.Drawing.Size(216, 74);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -163,8 +167,8 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnReset.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnReset.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnReset.Location = new System.Drawing.Point(477, 357);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
@@ -178,6 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(947, 475);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExit);
