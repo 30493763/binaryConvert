@@ -120,9 +120,5 @@ namespace binaryConvert
             return clickedButton.Text;
         }// end of returnButtonText method
 
-        private void lblBitLength_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

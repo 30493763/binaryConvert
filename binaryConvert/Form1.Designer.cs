@@ -142,7 +142,6 @@
             this.lblBitLength.Size = new System.Drawing.Size(186, 42);
             this.lblBitLength.TabIndex = 8;
             this.lblBitLength.Text = "BIT LENGTH";
-            this.lblBitLength.Click += new System.EventHandler(this.lblBitLength_Click);
             // 
             // lblBitLengthResult
             // 
