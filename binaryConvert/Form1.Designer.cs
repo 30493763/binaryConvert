@@ -112,7 +112,7 @@
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblResult.Location = new System.Drawing.Point(248, 115);
+            this.lblResult.Location = new System.Drawing.Point(223, 115);
             this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(37, 42);
