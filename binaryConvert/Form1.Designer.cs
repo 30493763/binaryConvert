@@ -40,6 +40,7 @@
             this.lblBitLengthResult = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
+            this.lblMax = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOne
@@ -138,9 +139,10 @@
             this.lblBitLength.Location = new System.Drawing.Point(29, 167);
             this.lblBitLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBitLength.Name = "lblBitLength";
-            this.lblBitLength.Size = new System.Drawing.Size(343, 42);
+            this.lblBitLength.Size = new System.Drawing.Size(186, 42);
             this.lblBitLength.TabIndex = 8;
-            this.lblBitLength.Text = "BIT LENGTH (MAX. 64):";
+            this.lblBitLength.Text = "BIT LENGTH";
+            this.lblBitLength.Click += new System.EventHandler(this.lblBitLength_Click);
             // 
             // lblBitLengthResult
             // 
@@ -178,12 +180,25 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // lblMax
+            // 
+            this.lblMax.AutoSize = true;
+            this.lblMax.Font = new System.Drawing.Font("Digital-7 Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMax.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblMax.Location = new System.Drawing.Point(223, 167);
+            this.lblMax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax.Name = "lblMax";
+            this.lblMax.Size = new System.Drawing.Size(150, 42);
+            this.lblMax.TabIndex = 12;
+            this.lblMax.Text = "MAX (64)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(947, 475);
+            this.Controls.Add(this.lblMax);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblBitLengthResult);
@@ -216,6 +231,7 @@
         private System.Windows.Forms.Label lblBitLengthResult;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label lblMax;
     }
 }
 

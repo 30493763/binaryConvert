@@ -119,5 +119,10 @@ namespace binaryConvert
             Button clickedButton = (Button)sender; //Cast the sender to a Button so we can access its properties
             return clickedButton.Text;
         }// end of returnButtonText method
+
+        private void lblBitLength_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
