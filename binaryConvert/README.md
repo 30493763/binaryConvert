@@ -7,6 +7,12 @@
 
 Create a C# Windows Forms Application that converts a 0-64 bit binary number into its decimal equivalent.
 
+## Project Description
+
+*   Double click on the file "Digital7Italic-BW658.ttf" to install custom font onto your system.
+
+*   Double click on the file "binaryConvert.sln" to open the project in Visual Studio.
+
 ## Key Components
 
 *   "0" and "1" buttons for user to input Binary number
